@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  background-color: rgba(58, 70, 99, 1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  /* justify-content: center; */
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 24px 0 31px;
+}
+
+header h2 {
+  font-size: 32px;
+  line-height: 29px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+}
+header p {
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.theme-box {
+  display: flex;
+  gap: 26px;
+  align-items: flex-end;
+  position: relative;
+}
+
+#theme-input {
+  width: 71px;
+  height: 26px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(36, 45, 68, 1);
+  border-radius: 30px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#theme-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(208, 63, 47, 1);
+  border-radius: 50%;
+}
+
+#theme-input::-moz-range-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(208, 63, 47, 1);
+  border-radius: 50%;
+}
+
+.flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.label-container {
+  display: flex;
+  gap: 11px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+label {
+  font-size: 12px;
+  line-height: 11px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.calculator-box {
+  width: 100%;
+  padding: 0 24px 31px 24px;
+  margin-top: 32px;
+}
+#number {
+  height: 88px;
+  width: 100%;
+  background-color: rgba(24, 31, 51, 1);
+  border: none;
+  border-radius: 10px;
+
+  /* // text */
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  padding-right: 24px;
+  color: rgba(255, 255, 255, 1);
+}
