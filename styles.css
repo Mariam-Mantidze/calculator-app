@@ -14,6 +14,10 @@ body {
   /* justify-content: center; */
 }
 
+button {
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -101,9 +105,10 @@ label {
   background-color: rgba(24, 31, 51, 1);
   border: none;
   border-radius: 10px;
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
 
   /* // text */
-
   font-size: 40px;
   font-weight: 700;
   line-height: 37px;
@@ -112,3 +117,59 @@ label {
   padding-right: 24px;
   color: rgba(255, 255, 255, 1);
 }
+
+#number::placeholder {
+  opacity: 1;
+  color: white;
+}
+
+#number:focus {
+  outline: none;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.operations-card {
+  background-color: rgba(36, 45, 68, 1);
+  width: 100%;
+  margin-top: 24px;
+  height: 420px;
+  border-radius: 10px;
+  padding: 24px;
+  gap: 13px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(60px, 1fr));
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.btn {
+  width: 100%;
+  /* min-width: 60px; */
+  /* min-height: 64px; */
+  border-radius: 8px;
+  border: none;
+  font-size: 32px;
+  line-height: 29px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+  color: rgba(67, 74, 89, 1);
+  background-color: rgba(234, 227, 220, 1);
+  box-shadow: 0px -4px 0px 0px rgba(179, 164, 151, 1) inset;
+}
+
+.operation {
+  font-size: 20px;
+  line-height: 18.4px;
+  letter-spacing: -0.33px;
+}
+
+/* .row {
+  width: 100%;
+  display: flex;
+  gap: 13px;
+  justify-content: space-evenly;
+} */
