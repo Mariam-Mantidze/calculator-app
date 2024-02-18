@@ -7,6 +7,8 @@ body {
   font-family: "League Spartan", sans-serif;
   background-color: rgba(58, 70, 99, 1);
   min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,17 +141,20 @@ input::-webkit-inner-spin-button {
   height: 420px;
   border-radius: 10px;
   padding: 24px;
+}
+
+.main-btns {
   gap: 13px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(60px, 1fr));
-
+  grid-template-columns: repeat(4, minmax(30px, 1fr));
+  justify-content: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .btn {
   width: 100%;
   /* min-width: 60px; */
-  /* min-height: 64px; */
+  min-height: 64px;
   border-radius: 8px;
   border: none;
   font-size: 32px;
@@ -167,9 +172,22 @@ input::-webkit-inner-spin-button {
   letter-spacing: -0.33px;
 }
 
-/* .row {
+.row {
   width: 100%;
   display: flex;
   gap: 13px;
-  justify-content: space-evenly;
-} */
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.reset-btn,
+.del {
+  background-color: rgba(100, 113, 152, 1);
+  box-shadow: 0px -4px 0px 0px rgba(65, 78, 115, 1) inset;
+  color: white;
+}
+.equal-btn {
+  background: rgba(208, 63, 47, 1);
+  box-shadow: 0px -4px 0px 0px rgba(147, 38, 26, 1) inset;
+  color: white;
+}
