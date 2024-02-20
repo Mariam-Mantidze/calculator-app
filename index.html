@@ -39,7 +39,7 @@
     </header>
 
     <div class="calculator-box">
-      <div id="number" class="number-input">0</div>
+      <div id="number" class="number-input"><p id="result"></p></div>
 
       <div class="operations-card">
         <div class="main-btns">
@@ -51,22 +51,26 @@
           <button class="btn number">4</button>
           <button class="btn number">5</button>
           <button class="btn number">6</button>
-          <button id="plus-btn" class="btn operation">+</button>
+          <button id="plus-btn" class="btn operator">+</button>
 
           <button class="btn number">1</button>
           <button class="btn number">2</button>
           <button class="btn number">3</button>
-          <button id="minus-btn" class="btn operation">-</button>
+          <button id="minus-btn" class="btn operator">-</button>
 
-          <button id="period-btn" class="btn operation">.</button>
+          <button id="period-btn" class="btn operator">.</button>
           <button class="btn number">0</button>
-          <button id="divide-btn" class="btn operation">/</button>
-          <button id="multiplication-btn" class="btn operation">x</button>
+          <button id="divide-btn" class="btn operator">/</button>
+          <button id="multiplication-btn" class="btn operator">x</button>
         </div>
 
         <div class="row">
-          <button class="btn reset-btn operation executive-btn">RESET</button>
-          <button class="btn equal-btn operation executive-btn">=</button>
+          <button id="reset-btn" class="btn reset-btn executive-btn">
+            RESET
+          </button>
+          <button id="equal-btn" class="btn equal-btn operator executive-btn">
+            =
+          </button>
         </div>
       </div>
     </div>
