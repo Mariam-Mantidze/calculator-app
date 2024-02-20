@@ -107,13 +107,14 @@ label {
   transition: 0.5s ease;
 }
 .number-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   height: 88px;
   width: 100%;
   background-color: rgba(24, 31, 51, 1);
   border: none;
   border-radius: 10px;
-  -moz-appearance: textfield;
-  -webkit-appearance: none;
   transition: 0.5s ease;
 
   /* // text */
@@ -124,20 +125,6 @@ label {
   text-align: right;
   padding-right: 24px;
   color: rgba(255, 255, 255, 1);
-}
-
-.number-input::placeholder {
-  opacity: 1;
-  color: white;
-}
-
-.number-input:focus {
-  outline: none;
-}
-
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
 }
 
 .operations-card {
@@ -224,11 +211,8 @@ input::-webkit-inner-spin-button {
   background-color: rgba(210, 205, 205, 1);
 }
 
-.light input[type="number"] {
+.light .number-input {
   background-color: rgba(238, 238, 238, 1);
-  color: rgba(54, 54, 44, 1);
-}
-.light input[type="number"]::placeholder {
   color: rgba(54, 54, 44, 1);
 }
 
@@ -252,7 +236,7 @@ input::-webkit-inner-spin-button {
   background: rgba(200, 84, 2, 1);
   box-shadow: 0px -4px 0px 0px rgba(135, 57, 1, 1) inset;
 }
-/*  */
+/* DARK MODE  */
 
 .dark {
   background-color: rgba(23, 6, 42, 1);
@@ -263,13 +247,9 @@ input::-webkit-inner-spin-button {
 }
 
 .dark input,
-.dark input[type="number"],
+.dark .number-input,
 .dark .operations-card {
   background-color: rgba(30, 9, 54, 1);
-  color: rgba(255, 229, 61, 1);
-}
-
-.dark input[type="number"]::placeholder {
   color: rgba(255, 229, 61, 1);
 }
 
