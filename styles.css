@@ -61,6 +61,7 @@ header p {
   border-radius: 30px;
   padding: 5px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .theme-input::-webkit-slider-thumb {
@@ -69,6 +70,10 @@ header p {
   height: 16px;
   background-color: rgba(208, 63, 47, 1);
   border-radius: 50%;
+}
+
+.theme-input::-webkit-slider-thumb:hover {
+  background-color: rgba(249, 107, 91, 1);
 }
 
 .theme-input::-moz-range-thumb {
@@ -158,8 +163,12 @@ label {
   color: rgba(67, 74, 89, 1);
   background-color: rgba(234, 227, 220, 1);
   box-shadow: 0px -4px 0px 0px rgba(179, 164, 151, 1) inset;
+  cursor: pointer;
 }
-
+.btn:hover {
+  background: rgba(255, 255, 254, 1);
+  transition: 0s;
+}
 /* .operation {
   font-size: 20px;
   line-height: 18.4px;
@@ -211,6 +220,14 @@ label {
   background-color: rgba(210, 205, 205, 1);
 }
 
+.light .theme-input::-webkit-slider-thumb {
+  background-color: rgba(200, 84, 2, 1);
+}
+
+.light .theme-input::-webkit-slider-thumb:hover {
+  background-color: rgba(255, 138, 56, 1);
+}
+
 .light .number-input {
   background-color: rgba(238, 238, 238, 1);
   color: rgba(54, 54, 44, 1);
@@ -225,6 +242,11 @@ label {
   background-color: rgba(229, 228, 225, 1);
   box-shadow: 0px -4px 0px 0px rgba(167, 158, 145, 1) inset;
 }
+
+.light .btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
 .light .reset-btn,
 .light .del {
   color: rgba(255, 255, 255, 1);
@@ -232,10 +254,18 @@ label {
   box-shadow: 0px -4px 0px 0px rgba(27, 96, 102, 1) inset;
 }
 
+.light .reset-btn:hover,
+.light .del:hover {
+  background-color: rgba(98, 181, 188, 1);
+}
+
 .light .equal-btn {
   color: rgba(255, 255, 255, 1);
   background: rgba(200, 84, 2, 1);
   box-shadow: 0px -4px 0px 0px rgba(135, 57, 1, 1) inset;
+}
+.light .equal-btn:hover {
+  background-color: rgba(255, 138, 56, 1);
 }
 /* DARK MODE  */
 
@@ -258,11 +288,20 @@ label {
   background-color: rgba(0, 222, 208, 1);
 }
 
+.dark .theme-input::-webkit-slider-thumb:hover {
+  background-color: rgba(147, 255, 248, 1);
+}
+
 .dark .btn {
   color: rgba(255, 229, 61, 1);
   background-color: rgba(51, 28, 77, 1);
   box-shadow: 0px -4px 0px 0px rgba(136, 28, 158, 1) inset;
 }
+
+.dark .btn:hover {
+  background-color: rgba(108, 52, 172, 1);
+}
+
 .dark .reset-btn,
 .dark .del {
   color: rgba(255, 255, 255, 1);
@@ -270,10 +309,19 @@ label {
   box-shadow: 0px -4px 0px 0px rgba(190, 21, 244, 1) inset;
 }
 
+.dark .reset-btn:hover,
+.dark .del:hover {
+  background-color: rgba(134, 49, 175, 1);
+}
+
 .dark .equal-btn {
   color: rgba(26, 35, 39, 1);
   background: rgba(0, 222, 208, 1);
   box-shadow: 0px -4px 0px 0px rgba(108, 249, 241, 1) inset;
+}
+
+.dark .equal-btn:hover {
+  background-color: rgba(147, 255, 248, 1);
 }
 
 @media (min-width: 600px) {

@@ -100,7 +100,7 @@ function calculate(previous, current, operator) {
       calculationResult = prev - curr;
       break;
 
-    case "*":
+    case "x":
       calculationResult = prev * curr;
       break;
 
