@@ -9,7 +9,7 @@
 body {
   font-family: "League Spartan", sans-serif;
   background-color: rgba(58, 70, 99, 1);
-  max-height: 100vh;
+  min-height: 100vh;
   min-height: 100dvh;
   overflow: hidden;
   display: flex;
@@ -139,7 +139,7 @@ label {
   margin-top: 24px;
   border-radius: 10px;
   padding: 24px;
-  width: 327px;
+  /* width: 327px; */
 }
 
 .main-btns {
@@ -345,7 +345,7 @@ label {
   }
 
   .operations-card {
-    width: 540px;
+    /* width: 540px; */
 
     padding: 32px;
   }
