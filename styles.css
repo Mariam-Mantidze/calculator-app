@@ -27,10 +27,9 @@ button {
 
 header {
   align-items: center;
-  width: 100%;
+  width: 320px;
   display: flex;
   justify-content: space-between;
-  padding: 0 24px 0 31px;
 }
 
 header h2 {
@@ -52,7 +51,7 @@ header p {
   gap: 26px;
   align-items: flex-end;
   position: relative;
-  transition: 0.5s ease;
+  /* transition: 0.5s ease; */
 }
 
 .theme-input {
@@ -109,10 +108,10 @@ label {
 }
 
 .calculator-box {
-  width: 100%;
+  /* width: 100%; */
   padding: 0 24px 31px 24px;
   margin-top: 32px;
-  transition: 0.5s ease;
+  /* transition: 0.5s ease; */
 }
 .number-input {
   display: flex;
@@ -123,7 +122,7 @@ label {
   background-color: rgba(24, 31, 51, 1);
   border: none;
   border-radius: 10px;
-  transition: 0.5s ease;
+  /* transition: 0.5s ease; */
 
   /* // text */
   font-size: 40px;
@@ -137,11 +136,10 @@ label {
 
 .operations-card {
   background-color: rgba(36, 45, 68, 1);
-  width: 100%;
   margin-top: 24px;
-  height: 420px;
   border-radius: 10px;
   padding: 24px;
+  width: 327px;
 }
 
 .main-btns {
@@ -153,8 +151,8 @@ label {
 }
 
 .btn {
-  transition: 0.5s ease;
-  width: 100%;
+  /* transition: 0.5s ease; */
+
   /* min-width: 60px; */
   height: 64px;
   border-radius: 8px;
@@ -209,6 +207,11 @@ label {
   font-size: 20px;
   line-height: 18.4px;
   letter-spacing: -0.33px;
+}
+
+.reset-btn,
+.equal-btn {
+  width: 133px;
 }
 
 .light {
@@ -327,7 +330,7 @@ label {
   background-color: rgba(147, 255, 248, 1);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   header {
     width: 533px;
     padding: 0;
@@ -343,7 +346,7 @@ label {
 
   .operations-card {
     width: 540px;
-    height: 480px;
+
     padding: 32px;
   }
 
