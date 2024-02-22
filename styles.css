@@ -111,7 +111,7 @@ label {
   /* width: 100%; */
   padding: 0 24px 31px 24px;
   margin-top: 32px;
-  width: 327px;
+  /* width: 351; */
   /* transition: 0.5s ease; */
 }
 .number-input {
@@ -152,9 +152,7 @@ label {
 }
 
 .btn {
-  /* transition: 0.5s ease; */
-
-  /* min-width: 60px; */
+  width: 60px;
   height: 64px;
   border-radius: 8px;
   border: none;
