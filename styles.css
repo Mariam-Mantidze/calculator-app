@@ -358,8 +358,8 @@ label {
   }
 
   .btn {
-    max-width: 101px;
-    max-height: 64px;
+    width: 101px;
+    height: 64px;
   }
 
   .row {
