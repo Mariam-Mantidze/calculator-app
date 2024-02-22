@@ -9,6 +9,7 @@
 body {
   font-family: "League Spartan", sans-serif;
   background-color: rgba(58, 70, 99, 1);
+  max-height: 100vh;
   min-height: 100dvh;
   overflow: hidden;
   display: flex;
@@ -146,7 +147,7 @@ label {
 .main-btns {
   gap: 13px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(30px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
@@ -155,7 +156,7 @@ label {
   transition: 0.5s ease;
   width: 100%;
   /* min-width: 60px; */
-  min-height: 64px;
+  height: 64px;
   border-radius: 8px;
   border: none;
   font-size: 32px;
@@ -328,12 +329,12 @@ label {
 
 @media (min-width: 600px) {
   header {
-    max-width: 533px;
+    width: 533px;
     padding: 0;
   }
   .number-input {
     height: 128px;
-    max-width: 540px;
+    width: 540px;
     font-size: 56px;
     line-height: 51.52px;
     letter-spacing: -0.93px;
@@ -341,7 +342,7 @@ label {
   }
 
   .operations-card {
-    max-width: 540px;
+    width: 540px;
     height: 480px;
     padding: 32px;
   }
@@ -368,7 +369,7 @@ label {
 
   .reset-btn,
   .equal-btn {
-    max-width: 227px;
+    width: 227px;
     height: 64px;
   }
 }
