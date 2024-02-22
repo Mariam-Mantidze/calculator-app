@@ -9,6 +9,7 @@
 body {
   font-family: "League Spartan", sans-serif;
   background-color: rgba(58, 70, 99, 1);
+  width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
   overflow: hidden;
@@ -330,7 +331,7 @@ label {
   background-color: rgba(147, 255, 248, 1);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   header {
     width: 533px;
     padding: 0;
