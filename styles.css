@@ -146,8 +146,8 @@ label {
   gap: 13px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* justify-content: center;
+  grid-template-rows: 1fr 1fr 1fr 1fr; */
 }
 
 .btn {
